@@ -54,7 +54,7 @@ align-items: center;
 }
 
 .icon-item {
-    margin: 5px 13px;
+    margin: 5px 22px;
 }
 
 .search {grid-column: 5;}
@@ -95,6 +95,7 @@ align-items: center;
 .card-header img {
     border-radius: 100%;
     border: 2px solid #cc224d;
+    padding: 2px;
 }
 
 .card-header .username {
@@ -109,12 +110,12 @@ align-items: center;
 }
 
 .card-image {
-    width: 610px;
+    width: 615px;
     height: 610px;
 }
 
 .card-image img {
-    width: 610px;
+    width: 615px;
     height: 610px;
 }
 
@@ -180,7 +181,20 @@ align-items: center;
 .date {
     font-size: 12px;
     margin-left: 8px;
-    color: rgb(150, 150, 150);
+    color: #7c7c7c;
+}
+
+.add-comment {
+    display: flex;
+    border-top: 1px solid #DBDBDB;
+    align-items: center;
+}
+
+.add-comment span {
+    color: rgba(56, 151, 240, .5);
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .add-comment #input-comment  {
@@ -188,9 +202,192 @@ align-items: center;
     width: 100%;
     height: 55px;
     padding-left: 20px;
-    border-top: 1px solid #DBDBDB;
 }
 
 .add-comment #input-comment:focus {
     outline: none;
+}
+
+.right-side{
+    margin-top: 50px;
+    margin-left: 25px;
+    grid-column: 5 / 8;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile .image-profile img {
+    border-radius: 100%;
+}
+
+.profile .text-profile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.profile .text-profile .user-profile {
+    font-size: 13px;
+    font-weight: bold;
+    color: #252525;
+}
+
+.profile .text-profile .name-profile {
+    font-size: 12px;
+    color: #7c7c7c;
+}
+
+.stories{
+    background: #ffffff;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    padding: 0px;
+    margin-top: 17px;
+    width: 300px;
+    height: 250px;
+}
+
+.stories .stories-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.stories .stories-header span:first-child {
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #a19f9f;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.stories .stories-header span:last-child {
+    margin-top: 10px;
+    margin-right: 15px;
+    color: #1d1d1d;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.stories .stories-content {
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 210px;
+}
+
+.stories .item-stories{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.stories .item-stories .text-stories{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.stories .item-stories .text-stories span:first-child{
+    color: #1d1c1c;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.stories .item-stories .text-stories span:last-child{
+    color: #a19f9f;
+    font-size: 12px;   
+}
+
+.stories .img-stories img{
+    margin-left: 17px;
+    border: 2px solid #cc224d;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.suggestion {
+    background: #ffffff;
+    border: 1px solid #DBDBDB;
+    margin-top: 17px;
+    width: 300px;
+    height: 200px;
+}
+
+.suggestion .suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.suggestion .suggestion-header span:first-child {
+    margin-left: 15px;
+    color: #a19f9f;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.suggestion .suggestion-header span:last-child {
+    margin-right: 15px;
+    color: #1d1d1d;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.suggestion .item-suggestion {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.suggestion .item-suggestion .text-suggestion {
+    display: flex;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.suggestion .img-suggestion img {
+    border: 2px solid #cc224d;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.suggestion .img-suggestion2 img {
+    border: 2px solid #fdfdfd;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.suggestion .item-suggestion .text-suggestion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.suggestion .item-suggestion .text-suggestion .user-suggestion {
+    font-weight: bold;
+}
+
+.suggestion .item-suggestion .text-suggestion .follow-suggestion {
+    color: #a19f9f;
+    font-size: 12px;
+}
+
+.suggestion .item-suggestion .text-suggestion .left-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.follow span {
+    color: #3897f0 ;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 12px;
 }
